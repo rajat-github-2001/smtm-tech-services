@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Urbanist", sans-serif;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+
+@layer utilities {
+  .padding-x {
+    @apply sm:px-8 px-4;
+  }
+
+  /* text */
+  .heading {
+    @apply font-black text-[20px] sm:text-[34px] lg:text-[36px] text-[#101920] leading-normal
+  }
+
+  .description {
+    @apply font-medium text-[10px] sm:text-[12px] lg:text-[16px] text-[#101920] leading-5
+  }
+
+  .title1 {
+    @apply font-bold text-[20px] sm:text-[34px] lg:text-[36px] text-[#101920] tracking-tight
+  }
+
+  .title2 {
+    @apply font-semibold text-[14px] sm:text-[20px] lg:text-[24px] text-[#101920] leading-normal
+  }
+
+  .title3 {
+    @apply font-bold text-[12px] sm:text-[20px] lg:text-[24px] text-black tracking-tighter
+  }
+
+  .title4 {
+    @apply font-bold text-[20px] sm:text-[34px] lg:text-[36px] text-[#C5C5C5] tracking-tight
+  }
+
+  .stack-text {
+    @apply font-semibold text-[10px] sm:text-[12px] lg:text-[14px] text-black leading-4
+  }
+
+  .footer-heading {
+    @apply text-[#FDFBFB] text-[46px] sm:text-[56px] lg:text-[66px]  xl:text-[96px] leading-normal
+  }
+
+  .footer-description {
+    @apply font-medium text-[12px] sm:text-[14px] lg:text-[20px] text-[#FEFB20] leading-5
+  }
+}
