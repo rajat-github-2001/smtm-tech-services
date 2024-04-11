@@ -5,7 +5,7 @@
  const OurProcess = () => {
    return (
      <section>
-      <div id='process' className='flex flex-col px-6 mb-9'>
+      <div id='our-process' className='flex flex-col px-6 mb-9'>
         <p className='title1'>
           {ourProcessText.title}
         </p>

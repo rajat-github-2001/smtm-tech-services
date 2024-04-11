@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <main className="relative">
+      <main className="relative overflow-hidden">
         <section className="m-6">
           <Nav />
 

@@ -7,9 +7,9 @@ export {default as footerLogo} from './footer-logo.svg';
 export {default as arrowLeftUp} from './arrow-right-up.svg';
 
 // client logos
-export {default as destack} from './destack.png';
-export {default as flowvity} from './flowvity.png';
-export {default as npstocks} from './npstocks.png';
-export {default as mealPrep} from './meal-prep.png';
-export {default as onlineKhabar} from './online-khabar.png';
-export {default as sanuDigital} from './sanu-digital.png';
+export {default as destack} from './destack.svg';
+export {default as flowvity} from './flowvity.svg';
+export {default as npstocks} from './npstocks.svg';
+export {default as mealPrep} from './meal-prep.svg';
+export {default as onlineKhabar} from './online-khabar.svg';
+export {default as sanuDigital} from './sanu-digital.svg';

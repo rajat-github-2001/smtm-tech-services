@@ -3,7 +3,7 @@ import { image1, image2, image3, image4, image5, image6, image7, image8, image9,
 
 export const navLinks = [
   { href: "#services", label: "Services" },
-  { href: "#cases", label: "Cases" },
+  { href: "#our-process", label: "Our Process" },
   { href: "#contact-us", label: "Contact Us" },
 ]
 

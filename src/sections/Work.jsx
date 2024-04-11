@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { workText, workImages } from '../constants';
-import { hand, laptop1, laptop2 } from '../assets/images/index'
+import { hand, laptop1, laptop2 } from '../assets/images/index';
+import Slider from 'react-slick';
 
 const Work = () => {
   const [showImgModal, setShowImgModal] = useState(false);
@@ -17,6 +18,13 @@ const Work = () => {
     document.body.style.overflow = '';
   }
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
+
   return (
     <>
       <section>
@@ -26,7 +34,7 @@ const Work = () => {
               {workText.title}
             </p>
           </div>
-          <div className='grid grid-cols-5 grid-rows-2 gap-2 place-items-center overflow-hidden'>
+          <div className='hidden md:grid grid-cols-5 grid-rows-2 gap-2 place-items-center overflow-hidden'>
             {workImages.map((workImage, index) => (
               <div className='w-[302px] h-[655px]'>
                 <img
@@ -40,11 +48,26 @@ const Work = () => {
             ))}
           </div>
 
-          <div className="absolute bottom-0 right-1/4">
+          <div className="hidden md:block absolute bottom-0 right-1/4">
             <img src={hand} alt="hand" />
           </div>
+
+          <div className='block md:hidden'>
+            <Slider {...settings}>
+              {workImages.map((workImage, index) => (
+                <div key={index}>
+                  <img
+                    src={workImage.image}
+                    alt={index}
+                    className='object-scale-down cursor-pointer p-2'
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
         </div>
-        <div className="flex flex-row gap-2 justify-center items-start mt-5">
+        <div className="hidden md:flex flex-row gap-2 justify-center items-start mt-5">
           <img src={laptop1} alt="laptop1" />
           <img src={laptop2} alt="laptop2" />
         </div>
