@@ -5,6 +5,8 @@ export {default as back} from './Back.png';
 export {default as copyright} from './copyright.svg';
 export {default as footerLogo} from './footer-logo.svg';
 export {default as arrowLeftUp} from './arrow-right-up.svg';
+export {default as close2} from './close-2.svg';
+export {default as arrowRight} from './arrow-right.svg'
 
 // client logos
 export {default as destack} from './destack.svg';

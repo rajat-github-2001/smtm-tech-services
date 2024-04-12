@@ -28,13 +28,13 @@ const Work = () => {
   return (
     <>
       <section>
-        <div className='relative'>
+        <div className='relative '>
           <div id='process' className='flex flex-col items-center px-6 mb-9'>
             <p className='title1'>
               {workText.title}
             </p>
           </div>
-          <div className='hidden md:grid grid-cols-5 grid-rows-2 gap-2 place-items-center overflow-hidden'>
+          <div className='hidden mx-[-50px] lg:grid grid-cols-5 grid-rows-2 gap-2 place-items-center overflow-hidden'>
             {workImages.map((workImage, index) => (
               <div className='w-[302px] h-[655px]'>
                 <img
@@ -48,11 +48,11 @@ const Work = () => {
             ))}
           </div>
 
-          <div className="hidden md:block absolute bottom-0 right-1/4">
+          <div className="hidden lg:block absolute bottom-0 right-1/4">
             <img src={hand} alt="hand" />
           </div>
 
-          <div className='block md:hidden'>
+          <div className='block lg:hidden mb-20'>
             <Slider {...settings}>
               {workImages.map((workImage, index) => (
                 <div key={index}>
@@ -67,8 +67,8 @@ const Work = () => {
           </div>
 
         </div>
-        <div className="hidden md:flex flex-row gap-2 justify-center items-start mt-5">
-          <img src={laptop1} alt="laptop1" />
+        <div className="flex flex-col mx-[-50px] md:mx-0 md:ml-4 lg:flex-row gap-2 justify-center items-start mt-5">
+          <img src={laptop1} alt="laptop1" className='w-full md:w-auto' />
           <img src={laptop2} alt="laptop2" />
         </div>
       </section>

@@ -5,3 +5,4 @@ export {default as Work} from './Work';
 export {default as OurProcess} from './OurProcess';
 export {default as TechStacks} from './TechStacks';
 export {default as Footer} from './Footer';
+export {default as ContactForm} from './ContactForm';

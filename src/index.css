@@ -28,8 +28,16 @@
     @apply font-black text-[20px] sm:text-[34px] lg:text-[36px] text-[#101920] leading-normal
   }
 
+  .heading-sm {
+    @apply font-black text-[60px] text-[#101920] leading-normal
+  }
+
   .description {
     @apply font-medium text-[10px] sm:text-[12px] lg:text-[16px] text-[#101920] leading-5
+  }
+
+  .description-sm {
+    @apply font-medium text-[16px] text-[#555B60] leading-5
   }
 
   .title1 {
@@ -53,10 +61,14 @@
   }
 
   .footer-heading {
-    @apply text-[#FDFBFB] text-[46px] sm:text-[56px] lg:text-[66px]  xl:text-[96px] leading-normal
+    @apply text-[#FDFBFB] font-bold text-[76px] sm:text-[56px] lg:text-[66px]  xl:text-[96px] leading-normal
   }
 
   .footer-description {
-    @apply font-medium text-[12px] sm:text-[14px] lg:text-[20px] text-[#FEFB20] leading-5
+    @apply font-medium text-[20px] text-[#FEFB20] leading-5
+  }
+
+  .label {
+    @apply font-bold text-[16px] leading-6
   }
 }

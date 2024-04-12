@@ -23,3 +23,31 @@
               transform: scale(1);
     }
   }
+
+  .slide-left {
+    -webkit-animation: slide-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: slide-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+  

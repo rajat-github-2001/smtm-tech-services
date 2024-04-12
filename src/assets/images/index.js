@@ -12,3 +12,9 @@ export {default as image10} from './image-10.png';
 export {default as hand} from './hand.png';
 export {default as laptop1} from './laptop-1.png';
 export {default as laptop2} from './laptop-2.png';
+
+export {default as bgImage1} from './bg-image-1.svg';
+export {default as bgImage2} from './bg-image-2.svg';
+export {default as bgImage3} from './bg-image-3.svg';
+export {default as bgImage4} from './bg-image-4.svg';
+export {default as bgImage5} from './bg-image-5.svg';
