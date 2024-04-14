@@ -19,7 +19,7 @@ const Process = ({ data, isLast }) => {
         <ul role='list' className='marker:text-black list-disc pl-5 pt-3 mb-6'>
           {data.points &&
             data.points.map((point) => (
-              <li>{point}</li>
+              <li key={point}>{point}</li>
             ))
           }
         </ul>

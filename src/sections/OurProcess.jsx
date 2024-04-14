@@ -17,7 +17,7 @@ const OurProcess = () => {
 
       <div className='relative bg-[#F8F5F2] rounded-3xl py-12 px-14 lg:grid lg:grid-cols-2 lg:grid-row-3 lg:gap-10'>
         {processes.map((process, index) => (
-          <Process data={process} isLast={index === 4} />
+          <Process key={index} data={process} isLast={index === 4} />
         ))}
 
         <img

@@ -36,11 +36,10 @@ const Work = () => {
           </div>
           <div className='hidden mx-[-50px] lg:grid grid-cols-5 grid-rows-2 gap-2 place-items-center overflow-hidden'>
             {workImages.map((workImage, index) => (
-              <div className='w-[302px] h-[655px]'>
+              <div key={index} className='w-[302px] h-[655px]'>
                 <img
                   src={workImage.image}
                   alt={index}
-                  key={index}
                   onClick={() => expandImage(workImage.image)}
                   className='object-scale-down cursor-pointer'
                 />

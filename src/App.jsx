@@ -2,12 +2,15 @@ import Nav from "./components/Nav";
 import './App.css';
 import { Hero, Clients, OurServices, OurProcess, TechStacks, Footer, Work, ContactForm } from "./sections"
 import DomainContextProvider from './context/DomainContextProvider';
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
       <DomainContextProvider>
         <main className="relative overflow-hidden">
+          <ToastContainer />
           <section className="m-6">
             <Nav />
 

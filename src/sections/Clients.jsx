@@ -9,10 +9,14 @@ const Clients = () => {
 
         <div className='flex flex-wrap justify-center lg:flex-row gap-16'>
           {clientIcons.map((clientIcon) => (
-            <img src={clientIcon.icon} alt={clientIcon.name} className='object-scale-down' />
+            <img
+              key={clientIcon.name}
+              src={clientIcon.icon}
+              alt={clientIcon.name}
+              className='object-scale-down'
+            />
           ))}
         </div>
-
       </div>
     </section>
   )

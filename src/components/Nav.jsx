@@ -23,9 +23,11 @@ const Nav = () => {
           ))}
         </ul>
 
-        <div className='bg-[#0000FF] hover:bg-blue-700 hidden md:block text-sm font-semibold leading-3 text-white rounded-3xl px-5 py-2 mb-[-4px]'>
-          <button onClick={() => setShowForm(true)}>Start Something New</button>
-        </div>
+        <button
+          className='bg-[#0000FF] hidden md:block text-sm font-semibold leading-3 text-white rounded-3xl px-5 py-2 mb-[-4px]'
+          onClick={() => setShowForm(true)}>
+          Start Something New
+        </button>
 
         <div className="block md:hidden cursor-pointer">
           <img src={hidden ? close : hamburger} alt="hamburger" width={25} height={25} onClick={() => setHidden(prev => !prev)} />
@@ -39,8 +41,11 @@ const Nav = () => {
                   <a href={item.href} className='text-sm font-normal leading-4'>{item.label}</a>
                 </li>
               ))}
-              <li className='bg-[#0000FF] text-sm font-semibold leading-3 text-white rounded-3xl px-5 py-2 mt-3'>
-                <button onClick={() => setShowForm(true)}>Start Something New</button>
+              <li 
+                className='bg-[#0000FF] text-sm font-semibold leading-3 text-white rounded-3xl px-5 py-2 mt-3'
+                onClick={() => setShowForm(true)}
+              >
+                <button>Start Something New</button>
               </li>
             </ul>
           </div>

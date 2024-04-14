@@ -13,15 +13,15 @@ const Hero = () => {
     <section className='w-full bg-[#F9F9F9] rounded-b-3xl px-8 py-9'>
       <div className="flex flex-col gap-4">
         <div className="hidden sm:flex flex-col gap-4 sm:flex-row justify-between items-center">
-          <p className="flex flex-col gap-8 w-full sm:w-[65%] xl:w-[50%]">
-            <p className="flex flex-col heading">
+          <div className="flex flex-col gap-8 w-full sm:w-[65%] xl:w-[50%]">
+            <div className="flex flex-col heading">
               <p>{heroText.heading1}</p>
               <p>{heroText.heading2}</p>
-            </p>
+            </div>
             <p className='description'>
               {heroText.description}
             </p>
-          </p>
+          </div>
 
           <div className='flex flex-col gap-14 items-center'>
             <img src={heroImage} alt="heroImage" className="w-[223px] h-[205px] md:w-[323px] md:h-[305px] xl:w-[423px] xl:h-[405px] 2xl:w-[523px] 2xl:h-[505px]" />

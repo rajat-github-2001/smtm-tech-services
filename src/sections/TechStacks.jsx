@@ -12,8 +12,8 @@ const TechStacks = () => {
       </div>
 
       <div className='flex flex-col gap-10 bg-[#FAFAF9] p-12 rounded-3xl'>
-        {techStacksData.map((data) => (
-          <TechStack kay={data} data={data} />
+        {techStacksData.map((data, index) => (
+          <TechStack key={index} data={data} />
         ))}
       </div>
     </section>

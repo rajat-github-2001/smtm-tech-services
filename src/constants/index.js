@@ -23,6 +23,29 @@ export const navLinks = [
   { href: "#footer", label: "Contact Us" },
 ]
 
+export const options = [
+  {
+    label: 'UI/UX',
+    value: 'ui/ux'
+  },
+  {
+    label: 'Web Development',
+    value: 'web development'
+  },
+  {
+    label: 'App Development',
+    value: 'app development'
+  },
+  {
+    label: 'Support',
+    value: 'support'
+  },
+  {
+    label: 'Others',
+    value: 'others'
+  }
+];
+
 export const heroText = {
   heading1: 'On Day 1',
   heading2: 'Anything Is Possible',
